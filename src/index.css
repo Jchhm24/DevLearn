@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .nav-link {
+    @apply flex flex-col text-center;
+  }
+
+  .span-link-hover-effect {
+    @apply h-0.5 w-0 bg-white transition-all duration-300;
+  }
+}
