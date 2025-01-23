@@ -1,9 +1,14 @@
-import React from 'react'
+import { InputSearch } from "@/components/navbars/InputSearch";
+import { Navbar } from "@/components/navbars/Navbar";
+import React from "react";
 
-type Props = {}
-
-export const Home = (props: Props) => {
-  return (
-    <div>Home</div>
-  )
-}
+export const Home = () => {
+    return (
+        <>
+            <Navbar />
+            <div className="p-8 fixed z-[8] hidden max-[994px]:block">
+                <InputSearch/>
+            </div>
+        </>
+    );
+};
