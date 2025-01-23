@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       colors:{
-        'background' : '#255059'
+        'background' : '#0e0e11',
+        'surface' : '#18181b'
       },
 
       fontFamily:{
