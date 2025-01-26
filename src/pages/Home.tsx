@@ -6,7 +6,7 @@ export const Home = () => {
     return (
         <>
             <Navbar />
-            <div className="p-8 fixed z-8 hidden max-[994px]:block">
+            <div className="p-8 fixed z-8 w-full hidden max-[994px]:block">
                 <InputSearch/>
             </div>
         </>
