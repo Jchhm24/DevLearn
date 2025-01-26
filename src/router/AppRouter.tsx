@@ -1,14 +1,14 @@
 import React from 'react'
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { Home } from '../pages/Home';
-import { Categorias } from '../pages/Categorias';
+import { AboutMe } from '../pages/AboutMe';
 
 export const AppRouter = () => {
   return (
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/categorias" element={<Categorias />} />
+            <Route path="/Sobre mi" element={<AboutMe />} />
         </Routes>
     </BrowserRouter>
   )
