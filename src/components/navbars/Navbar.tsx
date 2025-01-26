@@ -32,7 +32,7 @@ export const Navbar = () => {
              transition-transform duration-300 ease-in-out w-full z-10
           ${openNavbar.isOpen ? "translate-x-0" : "translate-x-full"}
         `}>
-            <a href="/" className="outline-none" >
+            <a href="/" className="outline-hidden" >
                 <Logo className="h-10"/>
             </a>
 
@@ -48,7 +48,7 @@ export const Navbar = () => {
 
             <button
                 onClick={openNavbar.toggle}
-                className="absolute left-0 top-0 bottom-0 my-auto bg-white -translate-x-8 rounded-md outline-none h-10">
+                className="absolute left-0 top-0 bottom-0 my-auto bg-white -translate-x-8 rounded-md outline-hidden h-10">
                 <ArrowLeftIcon
                     className={`h-10 transition-transform duration-300 ease-in-out
                       ${openNavbar.isOpen ? "rotate-180" : "rotate-0"}
