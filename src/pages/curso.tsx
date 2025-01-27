@@ -20,7 +20,7 @@ export const Curso = () => {
                 <InputSearch />
             </div>
             <main className="flex flex-row gap-10 px-10 py-26.5 max-[500px]:px-5">
-                <article className="flex flex-col gap-4 flex-1 max-[974px]:absolute max-[974px]:mr-10 max-[500px]:mr-5 ">
+                <article className="flex flex-col gap-4 flex-1">
                     <h2 className="text-4xl font-black tracking-3px">
                         {curso.nombre}
                     </h2>
@@ -56,7 +56,7 @@ export const Curso = () => {
                     </section>
                 </article>
 
-                <div className="relative w-[55%] max-[1030px]:w-full max-[974px]:blur-2xl max-[974px]:-z-1 max-[974px]:opacity-75">
+                <div className="relative w-[55%] max-[1030px]:w-full max-[974px]:absolute max-[974px]:left-0 max-[974px]:blur-2xl max-[974px]:-z-1 max-[974px]:opacity-75">
                     <img
                         src={curso.miniatura}
                         alt={curso.nombre}
