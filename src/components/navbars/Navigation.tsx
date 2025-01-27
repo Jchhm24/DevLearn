@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 export default function Navigation() {
 
@@ -7,18 +7,18 @@ export default function Navigation() {
 
     return (
         <nav className="flex flex-row gap-4 max-[994px]:flex-col">
-            <a href="/" className="nav-link group">
+            <NavLink to="/" className="nav-link group">
                 Home
                 <span className={`span-link-hover-effect group-hover:w-full
                     ${pathname === "/" && "w-full"}    
                 `}></span>
-            </a>
-            <a href="/AboutMe" className="nav-link group">
-                Sobre mi
+            </NavLink>
+            <NavLink to="/contacto" className="nav-link group">
+                Contacto
                 <span className={`span-link-hover-effect group-hover:w-full
                     ${pathname === "/categorias" && "w-full"}    
                 `}></span>
-            </a>
+            </NavLink>
         </nav>
     );
 }
