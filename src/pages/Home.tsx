@@ -5,6 +5,7 @@ import { Curso } from "@/interfaces/curso";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "@/assets/styles/gradients.css";
+import { Footer } from "@/components/footer";
 
 export const Home = () => {
     const cursosFound: Curso[] = cursos;
@@ -41,7 +42,7 @@ export const Home = () => {
                     </a>
                 </section>
 
-                <section id="cursos" className="grid grid-cols-2 gap-8 mt-10 px-28 max-[1302px]:px-20 max-[1228px]:px-10 max-[755px]:grid-cols-1 max-[755px]:px-20 max-[480px]:px-10 max-[320px]:px-5">
+                <section id="cursos" className="grid grid-cols-2 gap-8 my-10 px-28 max-[1302px]:px-20 max-[1228px]:px-10 max-[755px]:grid-cols-1 max-[755px]:px-20 max-[480px]:px-10 max-[320px]:px-5">
                     {cursosFound.map((curso: Curso) => (
                         <div
                             key={curso.id}
@@ -84,6 +85,8 @@ export const Home = () => {
                     ))}
                 </section>
             </main>
+
+            <Footer />
         </>
     );
 };

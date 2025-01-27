@@ -1,3 +1,4 @@
+import { Footer } from "@/components/footer";
 import { PlayIcon } from "@/components/icons/PlayIcon";
 import { ShoppingCar } from "@/components/icons/ShoppingCar";
 import { InputSearch } from "@/components/navbars/InputSearch";
@@ -18,7 +19,7 @@ export const Curso = () => {
             <div className="p-8 fixed z-8 w-full hidden max-[994px]:block">
                 <InputSearch />
             </div>
-            <main className="flex flex-row gap-10 px-10 pt-26.5 max-[500px]:px-5">
+            <main className="flex flex-row gap-10 px-10 py-26.5 max-[500px]:px-5">
                 <article className="flex flex-col gap-4 flex-1 max-[974px]:absolute max-[974px]:mr-10 max-[500px]:mr-5 ">
                     <h2 className="text-4xl font-black tracking-3px">
                         {curso.nombre}
@@ -68,6 +69,8 @@ export const Curso = () => {
                     />
                 </div>
             </main>
+
+            <Footer />
         </>
     );
 };
