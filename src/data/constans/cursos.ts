@@ -27,9 +27,9 @@ export const cursos: Curso[] = [
     },
     {
         id: 3,
-        nombre: "Crea una API REST profesional con NodeJS",
+        nombre: "Crea una API REST profesional con NestJS",
         descripcion:
-            "Aprende a construir APIs REST desde cero utilizando NodeJS y Express, implementando las mejores prácticas de desarrollo backend.",
+            "Aprende a construir APIs REST desde cero utilizando NestJS, implementando las mejores prácticas de desarrollo backend.",
         miniatura: "/src/assets/images/miniaturas/NestJS.jpg",
         duracion: "35 min",
         precio: 250,
