@@ -3,7 +3,9 @@ import { PlayIcon } from "@/components/icons/PlayIcon";
 // import { ShoppingCar } from "@/components/icons/ShoppingCar";
 import { InputSearch } from "@/components/navbars/InputSearch";
 import { Navbar } from "@/components/navbars/Navbar";
+import { PayPanel } from "@/components/PayPanel";
 import { cursos } from "@/data/constans/cursos";
+import { useIsOpen } from "@/hooks/useIsOpen";
 import type { Curso as ICurso } from "@/interfaces/curso";
 import { useParams } from "react-router-dom";
 
@@ -12,6 +14,8 @@ export const Curso = () => {
     const curso: ICurso = cursos.find(
         (curso: ICurso) => curso.id === parseInt(id || "0")
     ) as ICurso;
+
+    const payPanelState = useIsOpen()
 
     return (
         <>
@@ -46,7 +50,7 @@ export const Curso = () => {
                     </div>
 
                     <section className="flex flex-row gap-4 mt-12 max-[466px]:flex-col max-[974px]:mt-6">
-                        <button className="bg-white text-black font-semibold py-2 px-4 tracking-wider rounded-xl w-max cursor-pointer">
+                        <button onClick={payPanelState.toggle} className="bg-white text-black font-semibold py-2 px-4 tracking-wider rounded-xl w-max cursor-pointer">
                             Comprar ${curso.precio} MX
                         </button>
                         {/* <button className="flex flex-row items-center gap-2 border-2 border-white py-2 px-4 font-semibold tracking-wider rounded-xl w-max cursor-pointer hover:bg-white hover:text-black group">
@@ -71,6 +75,14 @@ export const Curso = () => {
             </main>
 
             <Footer />
+
+
+            <PayPanel
+                nombre={curso.nombre}
+                precio={curso.precio}
+                isOpen={payPanelState.isOpen}
+                onClose={payPanelState.close}
+            />
         </>
     );
 };
