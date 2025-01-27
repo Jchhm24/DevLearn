@@ -1,0 +1,3 @@
+.media-radial-gradient-top {
+    background: radial-gradient(48% 80% at 50% 0%, #37384390 0%, var(--color-background) 100%);
+}
