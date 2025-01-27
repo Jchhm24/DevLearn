@@ -1,6 +1,6 @@
 import { Logo } from "@/components/icons/Logo";
 import Navigation from "./Navigation";
-import { ShoppingCar } from "../icons/ShoppingCar";
+// import { ShoppingCar } from "../icons/ShoppingCar";
 import { InputSearch } from "./InputSearch";
 import "@/assets/styles/Navbar.css";
 import { ArrowLeftIcon } from "../icons/ArrowLeftIcon";

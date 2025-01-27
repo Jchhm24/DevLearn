@@ -1,6 +1,6 @@
 import { Footer } from "@/components/footer";
 import { PlayIcon } from "@/components/icons/PlayIcon";
-import { ShoppingCar } from "@/components/icons/ShoppingCar";
+// import { ShoppingCar } from "@/components/icons/ShoppingCar";
 import { InputSearch } from "@/components/navbars/InputSearch";
 import { Navbar } from "@/components/navbars/Navbar";
 import { cursos } from "@/data/constans/cursos";
