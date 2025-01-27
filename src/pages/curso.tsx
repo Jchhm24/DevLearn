@@ -45,14 +45,14 @@ export const Curso = () => {
                         </span>
                     </div>
 
-                    <section className="flex flex-row gap-4 mt-12 max-[466px]:flex-col">
+                    <section className="flex flex-row gap-4 mt-12 max-[466px]:flex-col max-[974px]:mt-6">
                         <button className="bg-white text-black font-semibold py-2 px-4 tracking-wider rounded-xl w-max cursor-pointer">
                             Comprar ${curso.precio} MX
                         </button>
-                        <button className="flex flex-row items-center gap-2 border-2 border-white py-2 px-4 font-semibold tracking-wider rounded-xl w-max cursor-pointer hover:bg-white hover:text-black group">
+                        {/* <button className="flex flex-row items-center gap-2 border-2 border-white py-2 px-4 font-semibold tracking-wider rounded-xl w-max cursor-pointer hover:bg-white hover:text-black group">
                             <ShoppingCar className="w-8 h-8 group-hover:fill-black" />
                             Agregar al carrito
-                        </button>
+                        </button> */}
                     </section>
                 </article>
 

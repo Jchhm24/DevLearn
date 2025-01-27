@@ -41,9 +41,9 @@ export const Navbar = () => {
             <section className="flex flex-row gap-4 ml-auto mr-0 max-[994px]:mx-auto">
                 <InputSearch className="max-[994px]:hidden" />
 
-                <a href="/Carrito" className="border-l border-white/20 pl-4">
+                {/* <a href="/Carrito" className="border-l border-white/20 pl-4">
                     <ShoppingCar className="h-10" />
-                </a>
+                </a> */}
             </section>
 
             <button
